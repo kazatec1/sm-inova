@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoSmInova from "@/assets/logo-sm-inova.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +20,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              <span className="text-primary">SM</span>
-              <span className="text-primary-foreground"> INOVA</span>
-            </h1>
+            <img 
+              src={logoSmInova} 
+              alt="SM INOVA - Estruturas Metálicas e Engenharia" 
+              className="h-12 md:h-14 w-auto transition-smooth hover:scale-105"
+            />
           </div>
 
           {/* Desktop Navigation */}

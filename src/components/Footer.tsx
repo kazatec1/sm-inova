@@ -1,3 +1,5 @@
+import logoSmInova from "@/assets/logo-sm-inova.png";
+
 const Footer = () => {
   return (
     <footer className="bg-secondary border-t border-primary/20 py-8">
@@ -7,9 +9,12 @@ const Footer = () => {
             © {new Date().getFullYear()} SM INOVA — Todos os direitos reservados
           </div>
           
-          <div className="flex items-center gap-2">
-            <span className="text-primary font-bold text-xl">SM</span>
-            <span className="text-primary-foreground font-bold text-xl">INOVA</span>
+          <div className="flex items-center">
+            <img 
+              src={logoSmInova} 
+              alt="SM INOVA" 
+              className="h-10 w-auto opacity-90"
+            />
           </div>
         </div>
       </div>
