@@ -15,37 +15,35 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-sm border-b border-primary/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-card border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-background px-4 py-2 rounded-sm shadow-card">
-              <img 
-                src={logoSmInova} 
-                alt="SM INOVA - Estruturas Metálicas e Engenharia" 
-                className="h-14 md:h-16 w-auto transition-smooth hover:scale-105"
-              />
-            </div>
+            <img 
+              src={logoSmInova} 
+              alt="SM INOVA - Estruturas Metálicas e Engenharia" 
+              className="h-16 md:h-20 w-auto transition-smooth hover:scale-105"
+            />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-primary-foreground hover:text-primary transition-smooth font-medium"
+              className="text-foreground hover:text-primary transition-smooth font-medium"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("projetos")}
-              className="text-primary-foreground hover:text-primary transition-smooth font-medium"
+              className="text-foreground hover:text-primary transition-smooth font-medium"
             >
               Projetos
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-primary-foreground hover:text-primary transition-smooth font-medium"
+              className="text-foreground hover:text-primary transition-smooth font-medium"
             >
               Contato
             </button>
@@ -55,7 +53,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-primary-foreground"
+            className="md:hidden text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -67,19 +65,19 @@ const Header = () => {
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-primary-foreground hover:text-primary transition-smooth font-medium text-left py-2"
+              className="text-foreground hover:text-primary transition-smooth font-medium text-left py-2"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("projetos")}
-              className="text-primary-foreground hover:text-primary transition-smooth font-medium text-left py-2"
+              className="text-foreground hover:text-primary transition-smooth font-medium text-left py-2"
             >
               Projetos
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-primary-foreground hover:text-primary transition-smooth font-medium text-left py-2"
+              className="text-foreground hover:text-primary transition-smooth font-medium text-left py-2"
             >
               Contato
             </button>
