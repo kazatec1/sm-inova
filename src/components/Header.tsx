@@ -20,11 +20,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src={logoSmInova} 
-              alt="SM INOVA - Estruturas Metálicas e Engenharia" 
-              className="h-12 md:h-14 w-auto transition-smooth hover:scale-105"
-            />
+            <div className="bg-background px-4 py-2 rounded-sm shadow-card">
+              <img 
+                src={logoSmInova} 
+                alt="SM INOVA - Estruturas Metálicas e Engenharia" 
+                className="h-14 md:h-16 w-auto transition-smooth hover:scale-105"
+              />
+            </div>
           </div>
 
           {/* Desktop Navigation */}
