@@ -17,13 +17,13 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-card border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center py-4">
             <img 
               src={logoSmInova} 
               alt="SM INOVA - Estruturas Metálicas e Engenharia" 
-              className="h-16 md:h-20 w-auto transition-smooth hover:scale-105"
+              className="h-20 md:h-24 w-auto transition-smooth hover:scale-105"
             />
           </div>
 
