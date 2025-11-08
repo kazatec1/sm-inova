@@ -25,7 +25,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
         <div className="geometric-border inline-block mb-6">
-          <span className="text-primary font-bold text-sm uppercase tracking-widest">
+          <span className="text-primary-foreground font-bold text-sm uppercase tracking-widest">
             Engenharia de Qualidade
           </span>
         </div>
